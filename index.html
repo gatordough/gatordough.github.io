@@ -9,7 +9,7 @@
   <body>
     <p id="timer"></p>
 
-    <button type="button" class="btn btn-primary">Start</button>
+    <button type="button" class="btn btn-primary" onclick="startTimer">Start</button>
 
     <!-- JavaScript Bootstrap-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -54,4 +54,12 @@ var x = setInterval(function() {
     document.getElementById("timer").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+
+
+
+function startTimer(){
+  document.getElementById("timer").innerHTML +="Timer is Starting.";
+}
+
 </script>
